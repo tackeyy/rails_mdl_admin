@@ -3,7 +3,9 @@ module RailsMdlAdmin
     source_root File.expand_path('../templates', __FILE__)
 
     def add_view_file
-      copy_file 'rails_mdl_admin.html.erb', 'app/views/layouts/rails_mdl_admin.html.erb'
+      copy_file 'rails_mdl_admin.html.erb',          'app/views/layouts/rails_mdl_admin.html.erb'
+      copy_file '_rails_mdl_admin_header.html.erb',  'app/views/layouts/_rails_mdl_admin_header.html.erb'
+      copy_file '_rails_mdl_admin_sidebar.html.erb', 'app/views/layouts/_rails_mdl_admin_sidebar.html.erb'
     end
 
     def change_layout
